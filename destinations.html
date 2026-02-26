@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Destinations | Bihar Bharman</title>
+
+  <meta name="description" content="Browse Bihar's districts and heritage sites for curated travel experiences." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#f6efe6" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="destinations.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="site.js" defer></script>
+
+</head>
+<body>
+
+    <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <i class="fas fa-map-marked-alt"></i>
+        BIHAR BHARMAN
+      </a>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="history.html">About</a>
+        <a href="destinations.html" class="active" aria-current="page">Explore</a>
+        <a href="cuisine.html">Cuisine</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="plan-trip.html" class="nav-btn">Plan Trip</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="destinations-hero">
+      <div class="destinations-hero-media"></div>
+      <div class="destinations-hero-content">
+        <span class="hero-tag">Bihar Trails</span>
+        <h1>Chart Your Journey Through Ancient Bihar</h1>
+        <p>From Buddhist sanctuaries to riverine plains, uncover the places that shaped India’s spiritual and cultural heartbeat.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#all-districts">View Districts <i class="fas fa-arrow-down"></i></a>
+          <a class="btn btn-outline" href="index.html">Back to Home <i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <h3>38</h3>
+            <p>Districts</p>
+          </div>
+          <div class="stat-card">
+            <h3>150+</h3>
+            <p>Heritage Sites</p>
+          </div>
+          <div class="stat-card">
+            <h3>1200+</h3>
+            <p>Years of Legacy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="districts-section" id="all-districts">
+      <div class="section-head centered-head">
+        <div>
+          <div class="section-kicker">COMPLETE GUIDE</div>
+          <h2 class="section-title">All Districts of Bihar</h2>
+        </div>
+        <p>Explore all 38 districts, each with its own unique story and attractions.</p>
+      </div>
+
+      <div class="controls-bar sticky-controls">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All Districts</button>
+          <button class="filter-btn" data-filter="heritage">About</button>
+          <button class="filter-btn" data-filter="spiritual">Spiritual</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+        </div>
+
+        <div class="search-box">
+          <input type="text" id="district-search" class="search-input" placeholder="Search districts...">
+          <button id="search-btn" class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="districts-grid" id="districts-grid">
+        </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand footer-brand">
+          <i class="fas fa-map-marked-alt"></i> BIHAR BHARMAN
+        </div>
+        <p class="footer-text">Preserving heritage for future generations.</p>
+        <h4>Social Media</h4>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">About</a></li>
+          <li><a href="destinations.html">Explore</a></li>
+          <li><a href="cuisine.html">Cuisine</a></li>
+          <li><a href="festivals.html">Festivals</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+<div class="footer-col">
+        <h4>Newsletter</h4>
+        <p class="footer-text footer-text--spaced">Subscribe to get updates on heritage sites and events.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+</div>
+    <div class="text-center footer-bottom">
+      &copy; 2025 Bihar Bharman. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    const curatedTrack = document.getElementById('curatedTrack');
+    const prevBtn = document.getElementById('curatedPrev');
+    const nextBtn = document.getElementById('curatedNext');
+    const scrollCards = (direction) => {
+      if (!curatedTrack) return;
+      const card = curatedTrack.querySelector('.curated-card');
+      const scrollAmount = card ? card.getBoundingClientRect().width + 32 : 320;
+      curatedTrack.parentElement.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    };
+    if (prevBtn) prevBtn.addEventListener('click', () => scrollCards(-1));
+    if (nextBtn) nextBtn.addEventListener('click', () => scrollCards(1));
+
+    const curatedGrid = document.querySelector('.curated-grid');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let autoTimer = null;
+    const autoScroll = () => {
+      if (!curatedGrid || prefersReducedMotion) return;
+      const card = curatedGrid.querySelector('.curated-card');
+      const scrollAmount = card ? card.getBoundingClientRect().width + 32 : 320;
+      const maxScroll = curatedGrid.scrollWidth - curatedGrid.clientWidth - 4;
+      if (curatedGrid.scrollLeft >= maxScroll) {
+        curatedGrid.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        curatedGrid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    };
+    const startAuto = () => {
+      if (prefersReducedMotion || !curatedGrid) return;
+      if (autoTimer) clearInterval(autoTimer);
+      autoTimer = setInterval(autoScroll, 3200);
+    };
+    const stopAuto = () => {
+      if (autoTimer) clearInterval(autoTimer);
+      autoTimer = null;
+    };
+    if (curatedGrid && !prefersReducedMotion) {
+      startAuto();
+      curatedGrid.addEventListener('mouseenter', stopAuto);
+      curatedGrid.addEventListener('mouseleave', startAuto);
+      curatedGrid.addEventListener('touchstart', stopAuto, { passive: true });
+      curatedGrid.addEventListener('touchend', startAuto);
+    }
+
+    // All 38 districts of Bihar
+    const districts = [
+      { name: 'Araria', image: 'budha.jpg', category: 'nature' },
+      { name: 'Arwal', image: 'BodhGaya Budh.png', category: 'heritage' },
+      { name: 'Aurangabad', image: 'bodhgay templ.png', category: 'heritage' },
+      { name: 'Banka', image: 'Nalanda-University.png', category: 'nature' },
+      { name: 'Begusarai', image: 'Shanti_Stupa_at_Rajgir_cropped.png', category: 'heritage' },
+      { name: 'Bhagalpur', image: 'budha.jpg', category: 'heritage' },
+      { name: 'Bhojpur', image: 'BodhGaya Budh.png', category: 'heritage' },
+      { name: 'Buxar', image: 'bodhgay templ.png', category: 'heritage' },
+      { name: 'Darbhanga', image: 'mmm.png', category: 'heritage' },
+      { name: 'East Champaran', image: 'Nalanda-University.png', category: 'nature' },
+      { name: 'Gaya', image: 'bodhgay templ.png', category: 'spiritual' },
+      { name: 'Gopalganj', image: 'BodhGaya Budh.png', category: 'heritage' },
+      { name: 'Jamui', image: 'Shanti_Stupa_at_Rajgir_cropped.png', category: 'nature' },
+      { name: 'Jehanabad', image: 'budha.jpg', category: 'heritage' },
+      { name: 'Kaimur', image: 'Nalanda-University.png', category: 'nature' },
+      { name: 'Katihar', image: 'BodhGaya Budh.png', category: 'nature' },
+      { name: 'Khagaria', image: 'bodhgay templ.png', category: 'heritage' },
+      { name: 'Kishanganj', image: 'Shanti_Stupa_at_Rajgir_cropped.png', category: 'nature' },
+      { name: 'Lakhisarai', image: 'budha.jpg', category: 'heritage' },
+      { name: 'Madhepura', image: 'mmm.png', category: 'heritage' },
+      { name: 'Madhubani', image: 'mmm.png', category: 'heritage' },
+      { name: 'Munger', image: 'BodhGaya Budh.png', category: 'heritage' },
+      { name: 'Muzaffarpur', image: 'Nalanda-University.png', category: 'heritage' },
+      { name: 'Nalanda', image: 'Nalanda-University.png', category: 'heritage' },
+      { name: 'Nawada', image: 'bodhgay templ.png', category: 'heritage' },
+      { name: 'Patna', image: 'BodhGaya Budh.png', category: 'heritage' },
+      { name: 'Purnia', image: 'budha.jpg', category: 'nature' },
+      { name: 'Rohtas', image: 'bodhgay templ.png', category: 'heritage' },
+      { name: 'Saharsa', image: 'mmm.png', category: 'heritage' },
+      { name: 'Samastipur', image: 'Nalanda-University.png', category: 'heritage' },
+      { name: 'Saran', image: 'BodhGaya Budh.png', category: 'heritage' },
+      { name: 'Sheikhpura', image: 'Shanti_Stupa_at_Rajgir_cropped.png', category: 'heritage' },
+      { name: 'Sheohar', image: 'budha.jpg', category: 'nature' },
+      { name: 'Sitamarhi', image: 'mmm.png', category: 'spiritual' },
+      { name: 'Siwan', image: 'bodhgay templ.png', category: 'heritage' },
+      { name: 'Supaul', image: 'Nalanda-University.png', category: 'nature' },
+      { name: 'Vaishali', image: 'budha.jpg', category: 'spiritual' },
+      { name: 'West Champaran', image: 'Shanti_Stupa_at_Rajgir_cropped.png', category: 'nature' }
+    ];
+
+    let currentCategory = 'all';
+
+    // Render districts
+    function renderDistricts() {
+      const searchTerm = document.getElementById('district-search').value.toLowerCase();
+      const grid = document.getElementById('districts-grid');
+      
+      const filtered = districts.filter(d => {
+        const matchesCategory = currentCategory === 'all' || d.category === currentCategory;
+        const matchesSearch = d.name.toLowerCase().includes(searchTerm);
+        return matchesCategory && matchesSearch;
+      });
+      
+      if(filtered.length === 0) {
+        grid.innerHTML = '<div class="empty-state">No districts found matching your search.</div>';
+        return;
+      }
+
+      grid.innerHTML = filtered.map((district, index) => {
+        const loading = index < 6 ? 'eager' : 'lazy';
+        const fetchPriority = index === 0 ? 'high' : 'auto';
+        return `
+        <div class="district-card" data-category="${district.category}">
+          <img src="${district.image}" alt="${district.name}" onerror="this.src='https://images.unsplash.com/photo-1595166662779-138357065671?q=80&w=800&auto=format&fit=crop'" loading="${loading}" fetchpriority="${fetchPriority}" decoding="async">
+          <div class="district-card-overlay">
+            <h4>${district.name}</h4>
+            <span class="district-badge">${district.category}</span>
+          </div>
+        </div>
+      `;
+      }).join('');
+    }
+
+    // Filter function
+    function filterDistricts(category) {
+      currentCategory = category;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.filter === category) {
+          btn.classList.add('active');
+        }
+      });
+      renderDistricts();
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        filterDistricts(this.dataset.filter);
+      });
+    });
+
+    // Add search listener
+    const searchInput = document.getElementById('district-search');
+    if (searchInput) searchInput.addEventListener('input', renderDistricts);
+    const searchBtn = document.getElementById('search-btn');
+    if (searchBtn) searchBtn.addEventListener('click', renderDistricts);
+
+    // Initialize
+    renderDistricts();
+  </script>
+</body>
+</html>

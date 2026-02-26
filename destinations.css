@@ -1,0 +1,442 @@
+/* Destinations page styles */
+.destinations-hero {
+  position: relative;
+  min-height: 80vh;
+  padding: 7.5rem 8% 5rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.destinations-hero::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  right: -120px;
+  top: -180px;
+  background: radial-gradient(circle, rgba(196, 90, 23, 0.25) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.destinations-hero::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  left: -140px;
+  bottom: -160px;
+  background: radial-gradient(circle, rgba(47, 91, 99, 0.25) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.destinations-hero-media {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(120deg, rgba(18, 16, 13, 0.55) 0%, rgba(18, 16, 13, 0.25) 55%, rgba(18, 16, 13, 0.05) 100%),
+    url('budha.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+.destinations-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 3rem 3rem 2.5rem;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(16px);
+  text-align: center;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  margin-bottom: 1.5rem;
+}
+
+.destinations-hero-content h1 {
+  font-size: 3.2rem;
+  line-height: 1.08;
+  margin-bottom: 1rem;
+}
+
+.destinations-hero-content p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--secondary);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.curated-section {
+  background: var(--bg-soft);
+  padding: 5rem 0 4rem;
+  position: relative;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  padding: 0 8% 1.5rem;
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.curated-grid {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  padding: 0.5rem 0 2.5rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.curated-grid::-webkit-scrollbar { display: none; }
+
+.train-track {
+  display: flex;
+  gap: 2rem;
+  padding: 0 8%;
+  width: max-content;
+}
+
+.curated-card {
+  min-width: 270px;
+  flex-shrink: 0;
+  height: 360px;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 16px 40px rgba(31, 27, 22, 0.18);
+  background: #fff;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  scroll-snap-align: start;
+}
+
+.curated-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 24px 50px rgba(31, 27, 22, 0.24);
+}
+
+.curated-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+.curated-card:hover img { transform: scale(1.08); }
+
+.curated-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(18, 16, 13, 0.88) 0%, rgba(18, 16, 13, 0.4) 55%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.curated-card-info {
+  transform: translateY(10px);
+  transition: 0.4s;
+}
+
+.curated-card h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.curated-card p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: 0.4s;
+  height: 0;
+  margin: 0;
+}
+
+.curated-card:hover p {
+  opacity: 1;
+  height: auto;
+  margin-top: 10px;
+}
+
+.curated-card:hover .curated-card-info { transform: translateY(0); }
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.districts-section {
+  background: var(--bg-alt);
+  padding: 5rem 8% 6rem;
+}
+
+.sticky-controls {
+  position: sticky;
+  top: 90px;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.8rem 1.2rem;
+  box-shadow: 0 12px 30px rgba(31, 27, 22, 0.12);
+}
+
+.controls-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.filter-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.search-box {
+  background: var(--surface);
+  border-radius: 50px;
+  padding: 6px 6px 6px 18px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 20px rgba(31, 27, 22, 0.08);
+  width: 280px;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 12px 30px rgba(31, 27, 22, 0.12);
+  border-color: rgba(196, 90, 23, 0.5);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--primary);
+  flex: 1;
+  background: transparent;
+}
+
+.search-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover { background: #a94c12; }
+
+.districts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.district-card {
+  height: 330px;
+  width: 280px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(31, 27, 22, 0.14);
+  background: #fff;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.district-card:hover {
+  box-shadow: 0 18px 40px rgba(31, 27, 22, 0.2);
+  transform: translateY(-6px);
+}
+
+.district-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.district-card:hover img { transform: scale(1.08); }
+
+.district-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(18, 16, 13, 0.85) 0%, rgba(18, 16, 13, 0.35) 55%, transparent 100%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.district-card h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.district-card .district-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.empty-state {
+  width: 100%;
+  text-align: center;
+  color: var(--secondary);
+  font-weight: 600;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 1100px) {
+  .destinations-hero { padding-top: 6.5rem; }
+  .districts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .destinations-hero-content { padding: 2.5rem; }
+  .destinations-hero-content h1 { font-size: 2.6rem; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+  .destinations-hero { min-height: 70vh; padding: 6rem 6% 3rem; }
+  .destinations-hero-content { padding: 2rem; }
+  .hero-stats { grid-template-columns: 1fr; }
+  .carousel-controls { padding: 0 6% 1rem; }
+  .districts-section { padding: 4rem 6%; }
+  .controls-bar { flex-direction: column-reverse; }
+  .districts-grid { grid-template-columns: 1fr; }
+  .sticky-controls { border-radius: 20px; }
+}

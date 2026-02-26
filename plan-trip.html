@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plan Trip | Bihar Bharman</title>
+
+  <meta name="description" content="Plan your Bihar trip with itineraries, guidance, and booking support." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#f6efe6" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="plan-trip.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="site.js" defer></script>
+
+</head>
+<body>
+    <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <i class="fas fa-map-marked-alt"></i>
+        BIHAR BHARMAN
+      </a>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="history.html">About</a>
+        <a href="destinations.html">Explore</a>
+        <a href="cuisine.html">Cuisine</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="plan-trip.html" class="nav-btn">Plan Trip</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="plan-hero">
+      <div class="plan-hero-bg"></div>
+      <div class="plan-hero-card">
+        <span class="hero-tag">Plan Trip</span>
+        <h1>Design Your Bihar Journey</h1>
+        <p>Build a personalized route across heritage sites, food trails, and festivals. Tell us your pace, interests, and timing — we’ll craft a meaningful itinerary.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#trip-form">Start Planning <i class="fas fa-arrow-right"></i></a>
+          <a class="btn btn-outline" href="destinations.html">Explore Destinations</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <h3>38</h3>
+            <p>Districts</p>
+          </div>
+          <div class="metric-card">
+            <h3>3</h3>
+            <p>Core Trails</p>
+          </div>
+          <div class="metric-card">
+            <h3>4</h3>
+            <p>Seasons</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding planner-section" id="trip-form">
+      <div class="section-head centered-head">
+        <div>
+          <div class="section-kicker">TRIP DESIGN</div>
+          <h2 class="section-title">Tell Us Your Travel Style</h2>
+        </div>
+        <p>Share your preferences and we’ll map the best routes, stays, and experiences.</p>
+      </div>
+
+      <div class="planner-grid">
+        <form class="planner-form">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="travelers">Travelers</label>
+            <select id="travelers">
+              <option>Solo</option>
+              <option>Couple</option>
+              <option>Family</option>
+              <option>Group (5+)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="duration">Trip Duration</label>
+            <select id="duration">
+              <option>2-3 Days</option>
+              <option>4-6 Days</option>
+              <option>7-10 Days</option>
+              <option>10+ Days</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="travel-date">Travel Date</label>
+            <input id="travel-date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="theme">Primary Interest</label>
+            <select id="theme">
+              <option>Heritage & Temples</option>
+              <option>Spiritual Retreat</option>
+              <option>Food & Markets</option>
+              <option>Festivals & Culture</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="notes">Trip Notes</label>
+            <textarea id="notes" rows="4" placeholder="Tell us about your must-see places or special requests."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit Trip Request</button>
+        </form>
+
+        <div class="planner-side">
+          <div class="planner-card">
+            <h3>Recommended Trails</h3>
+            <ul>
+              <li><span>Heritage Core</span><p>Nalanda → Rajgir → Bodh Gaya</p></li>
+              <li><span>Spiritual Loop</span><p>Vaishali → Kesaria → Bodh Gaya</p></li>
+              <li><span>Festival Circuit</span><p>Patna → Sonepur → Gaya</p></li>
+            </ul>
+          </div>
+          <div class="planner-card">
+            <h3>Best Seasons</h3>
+            <div class="season-grid">
+              <div class="season-pill">Oct–Nov</div>
+              <div class="season-pill">Dec–Jan</div>
+              <div class="season-pill">Feb–Mar</div>
+              <div class="season-pill">Apr–May</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding trail-section">
+      <div class="section-head centered-head">
+        <div>
+          <div class="section-kicker">ITINERARY</div>
+          <h2 class="section-title">Sample 5-Day Route</h2>
+        </div>
+        <p>A balanced itinerary that blends heritage, food, and serenity.</p>
+      </div>
+
+      <div class="route-grid">
+        <div class="route-card">
+          <h4>Day 1 · Patna</h4>
+          <p>Arrival, heritage walk, and riverside sunset.</p>
+        </div>
+        <div class="route-card">
+          <h4>Day 2 · Nalanda</h4>
+          <p>Explore university ruins and local cuisine trail.</p>
+        </div>
+        <div class="route-card">
+          <h4>Day 3 · Rajgir</h4>
+          <p>Hill views, hot springs, and ropeway ride.</p>
+        </div>
+        <div class="route-card">
+          <h4>Day 4 · Bodh Gaya</h4>
+          <p>Temple visits and meditation experiences.</p>
+        </div>
+        <div class="route-card">
+          <h4>Day 5 · Gaya</h4>
+          <p>Local markets and departure.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand footer-brand">
+          <i class="fas fa-map-marked-alt"></i> BIHAR BHARMAN
+        </div>
+        <p class="footer-text">Preserving heritage for future generations.</p>
+        <h4>Social Media</h4>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">About</a></li>
+          <li><a href="destinations.html">Explore</a></li>
+          <li><a href="cuisine.html">Cuisine</a></li>
+          <li><a href="festivals.html">Festivals</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+<div class="footer-col">
+        <h4>Newsletter</h4>
+        <p class="footer-text footer-text--spaced">Subscribe to get updates on heritage sites and events.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+</div>
+    <div class="text-center footer-bottom">
+      &copy; 2025 Bihar Bharman. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
